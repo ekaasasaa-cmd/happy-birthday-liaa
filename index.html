@@ -28,18 +28,16 @@
             animation: fadeIn 0.5s ease-in;
         }
 
-        /* Container GIF */
+        /* Container GIF (Satu per satu) */
         .gif-container {
             display: flex;
             justify-content: center;
-            gap: 10px;
             margin-bottom: 15px;
-            flex-wrap: wrap;
         }
 
         .card img { 
-            width: 110px; 
-            height: 110px;
+            width: 140px; 
+            height: 140px;
             object-fit: contain;
             border-radius: 10px; 
         }
@@ -99,19 +97,28 @@
     <div class="card page active" id="page1">
         <div class="gif-container">
             <img src="f6b3142d83381dc84598d8ab218d96a6.gif" alt="your birthday is calling">
-            <img src="659781f6460a12ea529eb0bf195f9cc9.gif" alt="cry">
         </div>
         <h2>your birthday is calling, wanna pick up the call? 0_0</h2>
         <div class="btn-container">
             <button class="btn-yes" onclick="showPage('page2')">Yes!</button>
-            <button class="btn-no" onclick="alert('awhh try again pls, i think this web is error TwT')">No</button>
+            <button class="btn-no" onclick="showPage('page-error')">No</button>
+        </div>
+    </div>
+
+    <div class="card page" id="page-error">
+        <div class="gif-container">
+            <img src="659781f6460a12ea529eb0bf195f9cc9.gif" alt="cry">
+        </div>
+        <h2>awhh try again pls, i think this web is error TwT</h2>
+        <div class="btn-container">
+            <button class="btn-yes" onclick="showPage('page2')">Yes!</button>
+            <button class="btn-no" onclick="showPage('page1')">No</button>
         </div>
     </div>
 
     <div class="card page" id="page2">
         <div class="gif-container">
             <img src="d7d5e2818735c91177fcb4f9b9f20d1f.gif" alt="sleep">
-            <img src="327b29d501c1da2cf5f2272066528fab.gif" alt="birthday">
         </div>
         <h2 style="color: #ff4d6d;">can u click me again?</h2>
         <p>LET'S GO TO THE GIFT! 🍒</p>
@@ -121,10 +128,8 @@
     </div>
 
     <div class="card page" id="page3">
-        <div class="gif-container" style="gap: 5px;">
-            <img src="8b06681e57bf75f9d2937fa2f8bb0960.gif" alt="confetti" style="width: 80px; height: 80px;">
-            <img src="e4b374c4abedc97828084a82274383b5.gif" alt="gift" style="width: 80px; height: 80px;">
-            <img src="e4b374c4abedc97828084a82274383b5.gif" alt="magic" style="width: 80px; height: 80px;">
+        <div class="gif-container">
+            <img src="8b06681e57bf75f9d2937fa2f8bb0960.gif" alt="confetti">
         </div>
         <div class="lowercase-message">
             happiest birthday to my lovely kindness friend! 🎈🎀
@@ -133,7 +138,7 @@
             <br><br>
             don't forget to smile today because you look the cutest when you smile. sehat selalu, dilancarkan segala urusannya, dan stay awesome as always!
             <br><br>
-            <span style="color: #ff758f; font-weight: bold;">- from your favorite person</span>
+            <span style="color: #ff758f; font-weight: bold;">- from aaiicc</span>
         </div>
         <div class="btn-container">
             <button class="btn-yes" onclick="location.reload()">Start Over</button>
@@ -149,4 +154,3 @@
     </script>
 </body>
 </html>
-
