@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>happy birthday liaa!</title>
+    <style>
+        /* Pengaturan Dasar - Tema Pink Pastel */
+        body {
+            margin: 0; padding: 0; 
+            display: flex; justify-content: center; align-items: center; 
+            min-height: 100vh;
+            background-color: #ffeef2; 
+            background-image: url('https://www.transparenttextures.com/patterns/hearts.png'); 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Kartu Utama */
+        .card {
+            background: white; 
+            padding: 25px; 
+            border-radius: 25px; 
+            box-shadow: 0 10px 25px rgba(255, 182, 193, 0.2);
+            border: 2px dashed #ffb3c6; 
+            text-align: center; 
+            max-width: 350px; 
+            width: 85%;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        /* Container GIF */
+        .gif-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .card img { 
+            width: 110px; 
+            height: 110px;
+            object-fit: contain;
+            border-radius: 10px; 
+        }
+
+        /* Warna Teks Maroon/Dark Pink */
+        h2 { color: #9c3d54; margin-bottom: 10px; font-size: 20px; font-weight: 600; }
+        p { color: #b56576; font-size: 14px; margin-bottom: 15px; }
+
+        /* Gaya Tombol */
+        .btn-container { 
+            display: flex; 
+            justify-content: center; 
+            gap: 10px; 
+            margin-top: 20px; 
+        }
+
+        button {
+            padding: 10px 20px; 
+            border: none; 
+            border-radius: 15px; 
+            cursor: pointer;
+            font-weight: 600; 
+            transition: 0.3s; 
+            font-family: inherit;
+        }
+
+        .btn-yes { background-color: #ffb3c6; color: white; }
+        .btn-yes:hover { background-color: #ff8fab; transform: scale(1.05); }
+        
+        .btn-no { background-color: #fff0f3; color: #cc8da0; }
+        .btn-no:hover { background-color: #ffe3e8; }
+
+        /* Navigasi Halaman */
+        .page { display: none; }
+        .active { display: block; }
+
+        /* PESAN BIRTHDAY BESTIE - KHUSUS HURUF KECIL */
+        .lowercase-message {
+            text-align: left; 
+            font-size: 13.5px; 
+            line-height: 1.7; 
+            color: #803d4d; 
+            border-top: 1px solid #ffe3e8; 
+            padding-top: 15px; 
+            margin-top: 15px;
+            text-transform: lowercase; 
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card page active" id="page1">
+        <div class="gif-container">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHJtZmxueXF4eXJyeXhyeXhyeXhyeXhyeXhyeXhyeXhyeXhyeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/vV9SbgYI9W5l5O9019/giphy.gif" alt="Snoopy Shy">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmsxd3p5NDN6N3Znbm02N2N6YndwNm96cmtwb3FvczI5bDJ6Y3lhayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/9SqtqCpwRRHNg3CXu9/giphy.gif" alt="Woodstock Heart">
+        </div>
+        <h2>are u ready? 0_0</h2>
+        <div class="btn-container">
+            <button class="btn-yes" onclick="showPage('page2')">Yes!</button>
+            <button class="btn-no" onclick="alert('awhh try again pls, i think this web is error TwT')">No</button>
+        </div>
+    </div>
+
+    <div class="card page" id="page2">
+        <div class="gif-container">
+            <img src="https://media.giphy.com/media/12837EwMwlD8T6/giphy.gif" alt="Snoopy Birthday Cake">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3hpeWtwbHBlOHF3cDRxeHpqejZ2NDNqMHBxOXJ1bThtczgzdnQ3ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Ww3QZYo9I6IE6vO6Sg/giphy.gif" alt="Snoopy Party">
+        </div>
+        <h2 style="color: #ff4d6d;">can u click me again?</h2>
+        <p>LET'S GO TO THE GIFT! 🍒</p>
+        <div class="btn-container">
+            <button class="btn-yes" onclick="showPage('page3')">Next ✨</button>
+        </div>
+    </div>
+
+    <div class="card page" id="page3">
+        <div class="gif-container" style="gap: 5px;">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW84ZG8xeW8wY2x3eWZ6cmF1Z3R0ZzZicnJsdjFidmoxM3FwYmN4ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/9Y5BbDSkSTiY8/giphy.gif" alt="Snoopy Love" style="width: 80px; height: 80px;">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3NpaTIyN3RpdHhiam5ldHhxbnp6a24yYnRtNjdwZmlieW5scGozayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/K9reT58sR60vC/giphy.gif" alt="Snoopy Dance Cake" style="width: 80px; height: 80px;">
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmZ0MnU3N3BiMnJjcW5ibjI4YWt0OHAzczByN3lsdnI0M3dwMmhpMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/5Yp6EemCcl0_1vnm7W/giphy.gif" alt="Snoopy Hug" style="width: 80px; height: 80px;">
+        </div>
+        <div class="lowercase-message">
+            happiest birthday to my lovely kindness friend! 🎈🎀
+            <br><br>
+            another year older, another year wiser, and of course, another year of me being so proud of you. selamat bertambah usia ya! semoga kamu selalu dikelilingi kebahagiaan dan tawa setiap harinya.
+            <br><br>
+            don't forget to smile today because you look the cutest when you smile. sehat selalu, dilancarkan segala urusannya, dan stay awesome as always!
+            <br><br>
+            <span style="color: #ff758f; font-weight: bold;">- from your favorite person</span>
+        </div>
+        <div class="btn-container">
+            <button class="btn-yes" onclick="location.reload()">Start Over</button>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(p => p.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
+
